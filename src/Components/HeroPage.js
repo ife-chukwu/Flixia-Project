@@ -2,6 +2,7 @@ import React from "react";
 import { HiOutlineSearch } from "react-icons/hi";
 import { TiThMenuOutline } from "react-icons/ti";
 import {BsFacebook} from 'react-icons/bs'
+import {AiFillGoogleCircle} from 'react-icons/ai'
 import { useState } from "react";
 import NavbarMd from "./NavbarMd";
 import HeroItems from "./HeroItems";
