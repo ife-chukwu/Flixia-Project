@@ -1,8 +1,9 @@
 import React from "react";
 import { HiOutlineSearch } from "react-icons/hi";
-import { TiThMenuOutline } from "react-icons/ti";
-import {BsFacebook} from 'react-icons/bs'
-import {AiFillGoogleCircle} from 'react-icons/ai'
+import { BsFacebook } from "react-icons/bs";
+import { AiFillGoogleCircle } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillTwitterCircle } from "react-icons/ai";
 import { useState } from "react";
 import NavbarMd from "./NavbarMd";
 import HeroItems from "./HeroItems";
@@ -41,20 +42,18 @@ function Hero() {
   };
   return (
     <div className="bg-hero-image bg-no-repeat bg-cover bg-bottom w-full h-[100vh]">
-      <div className="flex text-[20px] items-center   justify-between  w-[100%]  bg-black/60 hover:bg-black/80 transition duration-700 ease-in-out backdrop-blur-[3px] pt-2 pb-5 ">
+      <div className=" h-10 lg:h-[80px] w-[100%] flex text-[20px] items-center   justify-between    bg-black/60 hover:bg-black/80 transition duration-700 ease-in-out backdrop-blur-[3px] pt-2 pb-5 ">
         <figure className="">
           <img
             src="Flixialogo.png"
             alt="Flixia"
-            className="px-3 w-[190px] h-15  items-center mt-3  shadow-2xl  "
-            data-aos="zoom-in-left"
-            data-aos-duration="3000"
+            className="w-[100px] md:w-[190px] h-15 px-3 items-center mt-3  shadow-2xl  "
+            data-aos="md:zoom-in-left"
+            data-aos-duration="md:3000"
           />
         </figure>
 
-        <TiThMenuOutline className="text-white  hover:text-orange-400 mr-[19%] transition duration-500 ease-in-out text-[40px] cursor-pointer  md:hidden" />
-
-        <ul className=" hidden  md:flex flex-row text-white gap-5 px-9 pt-4 items-center font-normal text-base  cursor-pointer  ">
+        <ul className=" hidden  lg:flex flex-row text-white gap-5 px-9 pt-4 items-center font-normal text-base  cursor-pointer  ">
           <li
             className="text-white hover:text-orange-400"
             onClick={buttonHandler}
@@ -108,8 +107,8 @@ function Hero() {
       </div>
       <div className="flex flex-col pl-[60%] absolute  z-30">
         <button
-          className="flex   border-2xl bg-orange-400 hover:bg-orange-500 hover:text-white transition duration-400 text-white pl-11 py-2 mr-11
-          rounded-xl items-center text-base w-40 mt-[50px] ml-[10px] "
+          className="w-[100px]py-0 flex  text-[12px]  md:w-40 flex border-2xl bg-orange-400 hover:bg-orange-500 hover:text-white transition duration-400 text-white pl-11 py-2 mr-11
+          rounded-xl items-center text-base  mt-[50px] ml-[10px] "
           onClick={openFormHandler}
         >
           {openForm ? "Close form" : "Login here"}
@@ -154,20 +153,35 @@ function Hero() {
                 className=" w-[400px] py-2 outline-none  rounded-2xl text-lg p-4"
               />
 
-              <button className="flex   border-2xl bg-orange-400  hover:bg-orange-500 hover:text-white  transition duration-400 text-white pl-[50px] py-3   rounded-xl items-center text-base ml-[120px] w-40 mt-11 shadow-lg shadow-black">
+              <button className="lg:flex border-2xl bg-orange-400  hover:bg-orange-500 hover:text-white  transition duration-400 text-white pl-[50px] py-3   rounded-xl items-center text-base ml-[120px] w-40 mt-11 shadow-lg shadow-black">
                 Submit
               </button>
             </form>
           )}
         </div>
       </div>
-      <NavbarMd />
-      <HeroItems className="relative" />
-      <div className="bg-black/50 absolute mt-[-50px] w-full py-5 hover:bg-black hover:text-white  transition duration-700">
-        <footer className="flex justify-center">
-       <BsFacebook />
-       <AiFillGoogleCircle />
+      <div className="flex">
+        <HeroItems className="relative" />
+        <NavbarMd />
+      </div>
+      <div className="bg-black/50 absolute mt-[-60px] w-full  hover:bg-black  transition duration-700 text-orange-400">
+        <footer className="flex justify-center items-center gap-3 text-lg mt-2 cursor-pointer">
+          <BsFacebook className="hover:text-white transition duration-700 text-lg" />
+          <AiFillGoogleCircle className="hover:text-white transition duration-700 text-lg" />
+          <AiFillInstagram className="hover:text-white transition duration-700 text-lg" />
+          <AiFillTwitterCircle className="hover:text-white transition duration-700 text-lg" />
         </footer>
+        <div className="flex flex-col justify-center mt-1 ml-[45%]">
+          <p className="tracking-wide">
+            We are music{" "}
+            <span className="text-white hover:text-orange  transition duration-700">
+              Music is us
+            </span>
+          </p>
+          <p className="tracking-wide text-orange-400 hover:text-white transition duration-700 pb-4">
+            Copyright @2021 FLIXIA
+          </p>
+        </div>
       </div>
     </div>
   );

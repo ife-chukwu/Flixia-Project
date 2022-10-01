@@ -2,16 +2,16 @@ import React from "react";
 
 const HeroItems = () => {
   return (
-    <div className=" text-white leading-[5rem]  py-[2rem] bg-black/10 backdrop-blur-[3px] h-[85vh] relative">
+    <div className="text-white leading-[5rem]  py-[2rem] bg-black/10 backdrop-blur-[3px] h-[85vh] relative">
       <div className="flex " data-aos="fade-up"
-     data-aos-anchor-placement="top-center"
+      data-aos-anchor-placement="top-center"
      data-aos-duration="3000"
      >
         
         <h1
           className=" text-shadow text-[4rem] font-extrabold 
       text-orange-400 rounded-lg bg-black/0 backdrop-blur-[5px]
-       pt-2 pb-11  px-12 w-[50%]"
+       pt-2 pb-11  px-12 "
         >
           {" "}
           FLIXIA
@@ -21,7 +21,7 @@ const HeroItems = () => {
           STREAMS
         </h1>
       </div>
-      <div className=" bg-black/20 backdrop-blur-[5px] w-[50%] py-10">
+      <div className=" bg-black/20 backdrop-blur-[5px]  px-2 py-10">
         <h1 className="text-shadow text-white flex   text-[2rem] font-bold pl-[55px] leading-9">
           Who Are We?
         </h1>
