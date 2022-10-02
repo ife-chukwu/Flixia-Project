@@ -35,25 +35,32 @@ function Hero() {
   const buttonHandler = (e) => {
     e.preventDefault();
     setInputState("");
+    alert(inputState + "is processing");
     alert("Flixia is glad to meet you " + userNameInputState + " please wait");
     setUserNameInputState("");
     setUserEmailInputState("");
     setUserPasswordInputState("");
   };
   return (
-    <div className="bg-hero-image bg-no-repeat bg-cover bg-bottom w-full h-[100vh]">
-      <div className=" h-10 lg:h-[80px] w-[100%] flex text-[20px] items-center   justify-between    bg-black/60 hover:bg-black/80 transition duration-700 ease-in-out backdrop-blur-[3px] pt-2 pb-5 ">
-        <figure className="">
+    <div
+      className=" xs:bg-hero-image bg-hero-image bg-no-repeat bg-cover h-[100%] bg-center w-full 
+                     md:bg-hero-image md:bg-no-repeat md:bg-cover md:bg-bottom md:w-full md:h-[100vh]"
+    >
+      <div
+        className="mobile-nav
+      md:h-[80px] md:w-[100%] md:flex md:text-[20px] md:items-center   justify-between    bg-black/60 hover:bg-black/80 transition duration-700 ease-in-out backdrop-blur-[3px] pt-2 pb-5 "
+      >
+        <figure>
           <img
             src="Flixialogo.png"
             alt="Flixia"
-            className="w-[100px] md:w-[190px] h-15 px-3 items-center mt-3  shadow-2xl  "
-            data-aos="md:zoom-in-left"
-            data-aos-duration="md:3000"
+            className="logo md:w-[190px] md:h-15 px-3 items-center md:mt-3  shadow-4xl"
+            data-aos="zoom-in-left"
+            data-aos-duration="3000"
           />
         </figure>
 
-        <ul className=" hidden  lg:flex flex-row text-white gap-5 px-9 pt-4 items-center font-normal text-base  cursor-pointer  ">
+        <ul className=" hidden  md:flex flex-row text-white gap-5 px-9 pt-4 items-center font-normal text-base  cursor-pointer  ">
           <li
             className="text-white hover:text-orange-400"
             onClick={buttonHandler}
@@ -105,9 +112,9 @@ function Hero() {
           </form>
         </ul>
       </div>
-      <div className="flex flex-col pl-[60%] absolute  z-30">
-        <button
-          className="w-[100px]py-0 flex  text-[12px]  md:w-40 flex border-2xl bg-orange-400 hover:bg-orange-500 hover:text-white transition duration-400 text-white pl-11 py-2 mr-11
+      <div className=" pl-0  md:flex flex-col md:pl-[60%] absolute  z-30">
+      <button
+          className="button md:py-6 flex md:text-[16px] h-8 px-11 md:ml-[50px] md:w-40 md:flex border-2xl bg-orange-400 hover:bg-orange-500 hover:text-white transition duration-400 text-white pl-11 py-2 mr-11
           rounded-xl items-center text-base  mt-[50px] ml-[10px] "
           onClick={openFormHandler}
         >
@@ -164,23 +171,25 @@ function Hero() {
         <HeroItems className="relative" />
         <NavbarMd />
       </div>
-      <div className="bg-black/50 absolute mt-[-60px] w-full  hover:bg-black  transition duration-700 text-orange-400">
-        <footer className="flex justify-center items-center gap-3 text-lg mt-2 cursor-pointer">
-          <BsFacebook className="hover:text-white transition duration-700 text-lg" />
-          <AiFillGoogleCircle className="hover:text-white transition duration-700 text-lg" />
-          <AiFillInstagram className="hover:text-white transition duration-700 text-lg" />
-          <AiFillTwitterCircle className="hover:text-white transition duration-700 text-lg" />
-        </footer>
-        <div className="flex flex-col justify-center mt-1 ml-[45%]">
-          <p className="tracking-wide">
-            We are music{" "}
-            <span className="text-white hover:text-orange  transition duration-700">
-              Music is us
-            </span>
-          </p>
-          <p className="tracking-wide text-orange-400 hover:text-white transition duration-700 pb-4">
-            Copyright @2021 FLIXIA
-          </p>
+      <div className="bg-black/50 absolute mt-[25px] w-full  hover:bg-black  transition duration-700 text-orange-400">
+        <div className="pt-3">
+          <footer className="flex justify-center items-center gap-3 text-lg  cursor-pointer">
+            <BsFacebook className="hover:text-white transition duration-700 text-lg" />
+            <AiFillGoogleCircle className="hover:text-white transition duration-700 text-lg" />
+            <AiFillInstagram className="hover:text-white transition duration-700 text-lg" />
+            <AiFillTwitterCircle className="hover:text-white transition duration-700 text-lg" />
+          </footer>
+          <div className="flex flex-col justify-center mt-1 ml-[45%]">
+            <p className="tracking-wide">
+              We are music{" "}
+              <span className="text-white hover:text-orange  transition duration-700">
+                Music is us
+              </span>
+            </p>
+            <p className="tracking-wide text-orange-400 hover:text-white transition duration-700 pb-3">
+              Copyright @2021 FLIXIA
+            </p>
+          </div>
         </div>
       </div>
     </div>

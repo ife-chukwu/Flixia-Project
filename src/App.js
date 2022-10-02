@@ -4,7 +4,7 @@ import Hero from "./Components/HeroPage";
 function App() {
   return (
     <div>
-      <Hero className="lg:bg-hero-image" />
+      <Hero/>
     </div>
   );
 }

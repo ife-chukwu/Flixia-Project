@@ -2,15 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,500;0,600;1,200;1,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,500;0,600;1,200;1,500;1,600&display=swap");
 
-
-
-body{
+body {
   font-family: Poppins;
   font-size: 12px;
-  
 }
-.text-shadow{
+.text-shadow {
   text-shadow: 5px 5px 10px black;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-nav {
+    height: 50px;
+    position: relative;
+  }
+  .logo {
+    display: flex;
+    height: 30px;
+    width: 120px;
+    box-shadow: 1px 1px 1px whitesmoke;
+  }
+  .toggler {
+    color: whitesmoke;
+    position: absolute;
+    transition: 0.3s ease;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -140px;
+    margin-left: 190px;
+  }
+  .toggler:hover {
+    color: rgba(235, 134, 32, 0.995);
+  }
+  .jumbo-text {
+    margin-left: -20px;
+  }
+  .Jumbotron-span {
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+  }
+  .jumbotron {
+    font-size: 40px;
+    color: rgba(235, 134, 32, 0.995);
+    text-shadow: 1px 1px 1px black;
+  }
+  .side-nav{
+    padding: 40px;
+    margin-top: -100px;
+    margin-left: 100px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .side-nav li{
+    padding:9px 0 ;
+  }
+  .button{
+    display: flex;
+    padding: 0 15px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-left: 340px;
+    margin-top: -37px;
+  }
 }
