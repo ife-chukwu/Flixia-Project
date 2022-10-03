@@ -48,17 +48,17 @@ body {
     color: rgba(235, 134, 32, 0.995);
     text-shadow: 1px 1px 1px black;
   }
-  .side-nav{
+  .side-nav {
     padding: 40px;
     margin-top: -100px;
     margin-left: 100px;
     cursor: pointer;
     font-size: 16px;
   }
-  .side-nav li{
-    padding:9px 0 ;
+  .side-nav li {
+    padding: 9px 0;
   }
-  .button{
+  .button {
     display: flex;
     padding: 0 15px;
     height: 25px;
