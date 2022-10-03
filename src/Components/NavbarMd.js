@@ -15,7 +15,7 @@ const NavbarMd = () => {
           {openNav ? (
             <MdOutlineClear
               onClick={openNavHandler}
-              className=" toggler z-50 md:hidden"
+              className=" toggler-cancel z-50 md:hidden"
             />
           ) : (
             <TiThMenuOutline

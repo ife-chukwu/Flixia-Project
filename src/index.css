@@ -16,6 +16,7 @@ body {
   .mobile-nav {
     height: 50px;
     position: relative;
+    width: 100%;
   }
   .logo {
     display: flex;
@@ -30,7 +31,16 @@ body {
     font-size: 30px;
     cursor: pointer;
     margin-top: -140px;
-    margin-left: 190px;
+    margin-left: 150px;
+  }
+  .toggler-cancel{
+    color: whitesmoke;
+    position: absolute;
+    transition: 0.3s ease;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -140px;
+    margin-left: 210px;
   }
   .toggler:hover {
     color: rgba(235, 134, 32, 0.995);
@@ -60,11 +70,16 @@ body {
   }
   .button {
     display: flex;
-    padding: 0 15px;
+    padding: 13px 17px;
     height: 25px;
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 3px;
-    margin-left: 340px;
+    margin-left: 260px;
     margin-top: -37px;
+  }
+  .mobile-form{
+    width: 100%;
+    margin-top: 90px;
+    
   }
 }

@@ -124,7 +124,7 @@ function Hero() {
           {openForm && (
             <form
               onSubmit={buttonHandler}
-              className="flex flex-col mt-2 bg-black/70 h-[60vh] pt-16 pl-11 px-[40px] rounded-2xl "
+              className=" mobile-form bg-black/50"
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="500"
