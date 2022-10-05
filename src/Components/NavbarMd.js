@@ -34,9 +34,8 @@ const NavbarMd = () => {
           >
             <li className="text-white hover:text-orange-400 py-5">Albums</li>
             <li className="text-white hover:text-orange-400 py-5">Artists</li>
-            <li className="text-white hover:text-orange-400 py-5">Genres</li>
+            <li className="text-white hover:text-orange-400 py-5">Category</li>
             <li className="text-white hover:text-orange-400 py-5">Videos</li>
-            <li className="text-white hover:text-orange-400 py-5">Bio</li>
             <li className="text-white hover:text-orange-400 py-5">Contact</li>
           </ul>
         )}
