@@ -181,23 +181,23 @@ function Hero() {
         <div className="overflow-x-scroll scroll whitespace-nowrap scroll-smooth w-full h-full flex px-20 py-10 gap-14 scroll-hidden">
           <img
             src="https://images.unsplash.com/photo-1520170975578-25bd5217bf3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBnZW5yZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
-            className="rounded-3xl w-[35%] h-[300px] hover:scale-100 relative placeholder:hello cursor-pointer"
+            className="rounded-3xl w-[35%] h-[300px] hover:scale-100 relative placeholder:hello cursor-pointer" alt=""
           />
 
           <img
-            src="https://images.unsplash.com/photo-1505964135045-cdada2f6bf43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmFwJTIwbXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60 "
+            src="https://images.unsplash.com/photo-1505964135045-cdada2f6bf43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmFwJTIwbXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60 " alt=""
             className="rounded-3xl w-[35%] h-[300px] cursor-pointer"
           />
           <img
-            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWMlMjBnZW5yZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWMlMjBnZW5yZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt=""
             className="rounded-3xl w-[35%] h-[300px] cursor-pointer"
           />
           <img
-            src="https://images.unsplash.com/photo-1445985543470-41fba5c3144a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG11c2ljJTIwZ2VucmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
+            src="https://images.unsplash.com/photo-1445985543470-41fba5c3144a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG11c2ljJTIwZ2VucmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt=""
             className="rounded-3xl w-[35%] h-[300px] cursor-pointer"
           />
           <img
-            src="https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+            src="https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" alt=""
             className="rounded-3xl w-[35%] h-[300px]"
           />
         </div>
