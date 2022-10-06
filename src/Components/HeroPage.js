@@ -105,7 +105,7 @@ function Hero() {
                 value={inputState}
                 className="relative py-1 px-3 shadow-lg outline-none text-center text-gray-800 rounded-l-xl"
               />
-              <button className=" text-black/80 bg-orange-400 hover:bg-orange-600 transition duration-500 hover:text-white py-2 px-5  font-bold transition duration-500 ease-in-out rounded-r-xl">
+              <button className=" text-black/80 bg-orange-400 hover:bg-orange-600 transition duration-500 hover:text-white py-2 px-5  font-bold  ease-in-out rounded-r-xl">
                 <HiOutlineSearch />
               </button>
             </form>
