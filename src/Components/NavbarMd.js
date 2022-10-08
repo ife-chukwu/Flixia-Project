@@ -10,33 +10,33 @@ const NavbarMd = () => {
 
   return (
     <div>
-      <div className=" flex ml-[-180px] text-center py-[100px] md:hidden ">
-        <div className="flex justify-center">
+      <div className=" flex ml-[-150px] text-center py-[100px] relative md:hidden ">
+        <div className="flex mt-[-78%] ml-[130px] cursor-pointer text-4xl text-white justify-center">
           {openNav ? (
             <MdOutlineClear
               onClick={openNavHandler}
-              className=" toggler-cancel z-50 md:hidden"
+              className=" z-50 hover:text-orange-400 mt-[-20px] ml-[-45px]   md:hidden  "
             />
           ) : (
             <TiThMenuOutline
               onClick={openNavHandler}
-              className="toggler z-50 md:hidden"
+              className="z-50   hover:text-orange-400 mt-[-20px] ml-[-45px] md:hidden"
             />
           )}
         </div>
 
         {openNav && (
           <ul
-            className=" side-nav z-50 bg-black/60 md:hidden"
+            className=" px-20 ml-[-13px]  z-50 bg-black/50  mt-[-67%] cursor-pointer absolute md:hidden"
 
             data-aos="fade-down"
             data-aos-duration="md:10000"
           >
-            <li className="text-white hover:text-orange-400 py-5">Albums</li>
-            <li className="text-white hover:text-orange-400 py-5">Artists</li>
-            <li className="text-white hover:text-orange-400 py-5">Category</li>
-            <li className="text-white hover:text-orange-400 py-5">Videos</li>
-            <li className="text-white hover:text-orange-400 py-5">Contact</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10">Albums</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10">Artists</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10">Category</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10">Videos</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10">Contact</li>
           </ul>
         )}
       </div>
