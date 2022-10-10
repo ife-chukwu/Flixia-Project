@@ -11,7 +11,7 @@ const NavbarMd = () => {
   return (
     <div>
       <div className=" flex ml-[-150px] text-center py-[100px] relative md:hidden ">
-        <div className="flex mt-[-78%] ml-[130px] cursor-pointer text-4xl text-white justify-center">
+        <div className="flex absolute mt-[-80%] ml-[150px] cursor-pointer text-4xl text-white justify-center md:hidden">
           {openNav ? (
             <MdOutlineClear
               onClick={openNavHandler}
@@ -27,16 +27,16 @@ const NavbarMd = () => {
 
         {openNav && (
           <ul
-            className=" px-20 ml-[-13px]  z-50 bg-black/50  mt-[-67%] cursor-pointer absolute md:hidden"
+            className=" px-20 ml-[-13px]  z-50 bg-black/50  mt-[-70%] cursor-pointer absolute md:hidden"
 
             data-aos="fade-down"
             data-aos-duration="md:10000"
           >
-            <li className="text-white text-lg hover:text-orange-400 py-10">Albums</li>
-            <li className="text-white text-lg hover:text-orange-400 py-10">Artists</li>
-            <li className="text-white text-lg hover:text-orange-400 py-10">Category</li>
-            <li className="text-white text-lg hover:text-orange-400 py-10">Videos</li>
-            <li className="text-white text-lg hover:text-orange-400 py-10">Contact</li>
+            <li className="text-white text-lg  hover:text-orange-400 py-10 md:hidden">Albums</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">Artists</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">Category</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">Videos</li>
+            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">Contact</li>
           </ul>
         )}
       </div>
