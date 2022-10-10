@@ -187,16 +187,16 @@ function Hero() {
             Album <span className="md:text-orange-400 md:ml-3"> Covers</span>
           </h1>
 
-          <div className=" flex gap-5 overflow-x-scroll scroll-smooth h-[300px] md:flex md:gap-10 md:overflow-x-scroll md:first-letter md:h-[400px] md:scroll-smooth">
-            <div className="w-[400px] h-[230px] rounded border border-gray-400 bg-black/5 md:w-[400px] md:bg-black/5 md:h-[300px] md:shrink-0 md:rounded-lg md:border md:border-slate-400">
+          <div className=" flex gap-5 overflow-x-scroll scroll-smooth h-[300px] md:flex md:gap-10 md:overflow-x-scroll md:first-letter md:h-[400px] md:scroll-smooth ">
+            <div className="w-[400px] gap-5 h-[230px] rounded border border-gray-400 bg-black/5 md:w-[400px] md:bg-black/5 md:h-[300px] md:shrink-0 md:rounded-lg md:border md:border-slate-400">
               <figure className="w-[300px] p-2 h-[200px] shrink-0 md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://media.istockphoto.com/photos/guy-plays-guitar-girl-sings-african-american-man-with-white-girl-in-picture-id1328815944?b=1&k=20&m=1328815944&s=170667a&w=0&h=bHg3xyisEkJdRYCgHwe0a5jj4mJb6FQVxAW8KjFh70s="
-                  className="w-[100%] rounded-xl h-[100%] md:w-[100%] md:h-[100%] md:rounded-2xl  "
+                  className="w-[100%] gap-5 rounded-xl h-[100%] md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
                 <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">Show</span>{" "}
+                  <span className="md:text-orange-400  md:ml-3">Show</span>{" "}
                   Brakers
                 </figcaption>
               </figure>
@@ -209,7 +209,7 @@ function Hero() {
                 <img
                   src="https://media.istockphoto.com/photos/portrait-of-young-man-at-home-listening-to-the-vinyl-records-relaxing-picture-id946817228?b=1&k=20&m=946817228&s=170667a&w=0&h=Z3dklZ9iYLWYstsesCVRqt0nvxyll1eRCZegQmf3Tas="
                   alt=""
-                  className="h-[100%] rounded-2xl w-[100%] md:w-[100%] md:h-[100%] md:rounded-2xl  "
+                  className="h-[100%] gap-5 rounded-2xl w-[100%] md:w-[100%] md:h-[100%] md:rounded-2xl  "
                 />
                 w-[300px] p-2 shrink-0 h-[200px]
                 <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
@@ -222,7 +222,7 @@ function Hero() {
               <figure className="w-[300px] p-2 shrink-0 h-[200px]  md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://images.unsplash.com/photo-1510759395231-72b17d622279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG11c2ljJTIwYWxidW0lMjBjb3ZlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
-                  className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
+                  className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
                 <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
@@ -235,7 +235,7 @@ function Hero() {
               <figure className="w-[300px] p-2 shrink-0 h-[200px]  md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://images.unsplash.com/photo-1505964135045-cdada2f6bf43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmFwJTIwbXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60 "
-                  className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
+                  className="w-[100%]  gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
                 <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
@@ -248,7 +248,7 @@ function Hero() {
               <figure className="w-[300px] p-2 shrink-0 h-[200px]  md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWMlMjBnZW5yZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
-                  className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
+                  className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
                 <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
@@ -261,7 +261,7 @@ function Hero() {
               <figure className="w-[300px] p-2 shrink-0 h-[200px]  md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://images.unsplash.com/photo-1445985543470-41fba5c3144a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG11c2ljJTIwZ2VucmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
-                  className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
+                  className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
                 <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
@@ -270,7 +270,7 @@ function Hero() {
               </figure>
             </div>
             <div className="w-[400px] h-[230px] rounded border border-gray-400 bg-black/5  md:w-[400px] md:bg-black/5 md:h-[300px] md:shrink-0 md:rounded-lg md:border md:border-slate-400">
-              <figure className="w-[300px] p-2 shrink-0 h-[200px]  md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
+              <figure className="w-[300px] gap-5 p-2 shrink-0 h-[200px]  md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-jAtvM6AZL7945B249YljW-axIgWBz62XQ&usqp=CAU"
                   className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl "
@@ -288,7 +288,7 @@ function Hero() {
               <figure className="w-[300px] p-2 shrink-0 h-[200px]  md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9QgsItwYwzeESajmJM1r2XKMIa8PykgHKlg&usqp=CAU"
-                  className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
+                  className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
                 <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
@@ -301,7 +301,7 @@ function Hero() {
               <figure className="w-[300px] p-2 shrink-0 h-[200px]  md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTJ4AuwUIeQ-wc-z78atPgem_s9RgBtGP_A&usqp=CAU"
-                  className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
+                  className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
                 <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase md:ml-3">
@@ -313,7 +313,7 @@ function Hero() {
               </figure>
             </div>
             <div className="w-[400px] h-[230px] rounded border border-gray-400 bg-black/5  md:w-[400px] md:bg-black/5 md:h-[300px] md:shrink-0 md:rounded-lg md:border md:border-slate-400">
-              <figure className=" w-[300px] p-2 shrink-0 h-[200px] md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
+              <figure className=" w-[300px] gap-5 p-2 shrink-0 h-[200px] md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
                   src="https://media.istockphoto.com/photos/woman-hold-retro-vinyl-disc-with-neon-light-picture-id1308691734?b=1&k=20&m=1308691734&s=170667a&w=0&h=rKBtmP1K7GeImd04bbkweiajYA9jueWWSsjcKObFzSw="
                   className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
