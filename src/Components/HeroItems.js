@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroItems = () => {
   return (
-    <div className="bg-black/10 flex-col flex w-[100%] h-[100%] mt-[-6px] backdrop-blur-sm md:leading-[5rem]   md:bg-black/10 md:h-[100%]  md:mt-[-6px] md:flex md:flex-col md:backdrop-blur-sm  md:w-[100%] ">
+    <div className="bg-black/10 flex-col relative flex w-[100%] h-[100%] mt-[-6px] backdrop-blur-sm md:leading-[5rem]   md:bg-black/10 md:h-[100%]  md:mt-[-45px] md:flex md:flex-col md:backdrop-blur-sm  md:w-[100%]">
       <div
         className="flex items-start "
         data-aos="fade-up"

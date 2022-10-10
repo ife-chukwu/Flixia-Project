@@ -110,12 +110,13 @@ function Hero() {
         </div>
 
         <div className=" pl-0  md:flex flex-col md: z-30">
-          <div className="ml-[240px]">
+          <div className="flex  mr-20 items-center justify-end md:flex md:justify-end md:mt-[40px] md:mr-20 ">
             <button
-              className="flex py-1 text-white absolute bg-orange-400 text-md  w-[100px] px-[15px] ml-[10px] mt-[-38px] duration-400   rounded-sm  sm:ml-[460px] 
-          md:text-[16px]  md:ml-[65%]  md:flex md:border-2xl md:bg-orange-400 
-          md:hover:bg-orange-500 md:hover:text-white md:transition md:duration-400 md:text-white md:pl-11  
-          md:rounded-xl md:items-center md:absolute md:z-30 md:text-xl md:w-[140px] md:h-2 md:mt-[10px]  "
+              className="flex py-1 text-white  bg-orange-400 text-md  w-[100px] px-[15px] ml-[10px] mt-[-38px] duration-400 duration-400  rounded-sm hover:bg-orange-500 transition
+            
+          md:text-[16px] md:py-5  md:ml-[520px]  md:flex md:border-2xl md:bg-orange-400 
+          md:hover:bg-orange-500 md:hover:text-white md:transition md:duration-400 md:text-white md:pl-11 
+          md:rounded-lg md:items-center  md:z-30 md:text-xl md:w-[140px] md:h-2   "
               onClick={openFormHandler}
             >
               {openForm ? "cancel" : "Login here"}
@@ -126,7 +127,7 @@ function Hero() {
               {openForm && (
                 <form
                   onSubmit={buttonHandler}
-                  className="px-20 bg-black/90 absolute rounded-2xl md:absolute ml-4 z-30 md:flex md:flex-col md:bg-black/70 h-[65vh] md:ml-[140px] pl-11 md:px-[60px] md:rounded-2xl md:mt-[50px]"
+                  className="px-20 bg-black/90 absolute rounded-2xl w-[350px] h-[300px] z-30 md:absolute   md:flex md:flex-col md:bg-black/70 md:h-[65vh]    md:rounded-2xl md:mt-[10px] md:w-[520px] md:z-30"
                   data-aos="fade-down"
                   data-aos-easing="linear"
                   data-aos-duration="500"
@@ -141,7 +142,7 @@ function Hero() {
                     placeholder="Username"
                     onChange={enteredUserNameInput}
                     value={userNameInputState}
-                    className=" flex w-[300px] py-3 text-sm rounded-md ml-3 md:flex mb-[-15px] md:py-3 md:w-[400px]  outline-none md:rounded-2xl md:text-lg mt-[40px] p-4"
+                    className=" flex w-[230px] mb-2 py-3 mt-7 p-4 outline-none text-sm rounded-md  md:flex md:mb-[-15px]  md:w-[400px]  md:outline-none md:rounded-2xl md:text-lg md:mt-[40px] "
                   />
                   <input
                     required
@@ -150,7 +151,7 @@ function Hero() {
                     onChange={enteredUserEmailInput}
                     value={userEmailInputState}
                     placeholder="Email"
-                    className="flex w-[300px] py-3 text-sm rounded-md ml-3 md:flex mb-6 md:py-3 md:w-[400px]  outline-none md:rounded-2xl md:text-lg mt-[40px] p-4"
+                    className="flex w-[230px] py-3 mt-7 p-4 outline-none text-sm rounded-md md:flex md: mb-1 md:py-3 md:w-[400px]  md:outline-none md:rounded-2xl md:text-lg md:mt-[40px] "
                   />
                   <input
                     required
@@ -159,11 +160,11 @@ function Hero() {
                     onChange={enteredUserPasswordInput}
                     value={userPasswordInputState}
                     placeholder="Password"
-                    className="flex w-[300px] py-3 text-sm rounded-md ml-3 md:w-[400px] md:py-3 outline-none  md:rounded-2xl md:text-lg p-4"
+                    className="flex w-[230px] py-3 mt-7 p-4 outline-none text-sm rounded-md  md:w-[400px] md:py-3 md:outline-none  md:rounded-2xl md:text-lg md:p-4"
                   />
 
                   <button
-                    className=" flex ml-[75px] mt-10 px-20 py-3 rounded-xl
+                    className=" flex ml-[57px] mt-8 px-[40px] py-2 rounded-xl
                md:flex bg-orange-400  hover:bg-orange-500 hover:text-white  transition duration-400 text-white md:pl-[60px] md:py-3   md:rounded-xl text-center text-xl md:ml-[105px] md:w-60 md:mt-20 shadow-lg shadow-black"
                   >
                     Submit
@@ -173,7 +174,7 @@ function Hero() {
             </div>
           </div>
           <div className="flex">
-            <HeroItems className="absolute" />
+            <HeroItems className="relative" />
             <NavbarMd />
           </div>
         </div>
@@ -183,8 +184,8 @@ function Hero() {
           className="text-white p-10 bg-black/90 md:p-10 md:bg-black/90"
           id="categories"
         >
-          <h1 className="md:flex md:justify-center md:items-center md:py-4 md:text-white md:text-5xl md:uppercase">
-            Album <span className="md:text-orange-400 md:ml-3"> Covers</span>
+          <h1 className="flex justify-center items-center py-4 text-4xl uppercase md:flex md:justify-center md:items-center md:py-4 md:text-white md:text-5xl md:uppercase">
+            Album <span className="text-orange-400 ml-3 md:text-orange-400 md:ml-3"> Covers</span>
           </h1>
 
           <div className=" flex gap-5 overflow-x-scroll scroll-smooth h-[300px] md:flex md:gap-10 md:overflow-x-scroll md:first-letter md:h-[400px] md:scroll-smooth ">
@@ -195,8 +196,8 @@ function Hero() {
                   className="w-[100%] gap-5 rounded-xl h-[100%] md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400  md:ml-3">Show</span>{" "}
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400  md:ml-3">Show</span>{" "}
                   Brakers
                 </figcaption>
               </figure>
@@ -211,9 +212,9 @@ function Hero() {
                   alt=""
                   className="h-[100%] gap-5 rounded-2xl w-[100%] md:w-[100%] md:h-[100%] md:rounded-2xl  "
                 />
-                w-[300px] p-2 shrink-0 h-[200px]
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">Disco</span>{" "}
+                
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Disco</span>{" "}
                   Plate
                 </figcaption>
               </figure>
@@ -225,8 +226,8 @@ function Hero() {
                   className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">Water</span>{" "}
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Water</span>{" "}
                   Miles
                 </figcaption>
               </figure>
@@ -238,8 +239,8 @@ function Hero() {
                   className="w-[100%]  gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">Chains</span> &
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Chains</span> &
                   Chackles
                 </figcaption>
               </figure>
@@ -251,8 +252,8 @@ function Hero() {
                   className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">Electronic</span>{" "}
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Electronic</span>{" "}
                   sound
                 </figcaption>
               </figure>
@@ -264,8 +265,8 @@ function Hero() {
                   className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">Acou</span> Stic
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Acou</span> Stic
                 </figcaption>
               </figure>
             </div>
@@ -276,8 +277,8 @@ function Hero() {
                   className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
                     Everything{" "}
                   </span>{" "}
                   Rap
@@ -291,8 +292,8 @@ function Hero() {
                   className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">Behind</span>
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Behind</span>
                   Scenes
                 </figcaption>
               </figure>
@@ -304,8 +305,8 @@ function Hero() {
                   className="w-[100%] gap-5 h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase md:ml-3">
-                  <span className="md:text-orange-400 md:ml-3">
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase md:ml-3">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
                     Voice Of the
                   </span>{" "}
                   Heroes
@@ -319,25 +320,27 @@ function Hero() {
                   className="w-[100%] h-[100%] rounded-2xl md:w-[100%] md:h-[100%] md:rounded-2xl  "
                   alt=""
                 />
-                <figcaption className=" md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="md:text-orange-400 md:ml-3">All d</span> Way
+                <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">All d</span> Way
                 </figcaption>
               </figure>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-black">
-        <figure className="w-full  h-[250px] object-fit md:object-fit md:h-[250px] md:w-full ">
+      <div className="bg-slate-900">
+        <div className="opacity-70">
+        <figure className="w-full  h-[250px] object-fit md:object-fit md:h-[250px] md:w-full border border-slate-600 md:backdrop-blur-7xl">
           <img
             src="https://media.istockphoto.com/photos/happy-woman-wearing-headphones-outdoor-picture-id1401333246?b=1&k=20&m=1401333246&s=170667a&w=0&h=FXCiQlhHqZgawF18gClhHlrdeAQM0LT65yBipPXfA_4="
             alt="Flixia"
-            className="object-cover w-[100%] h-[100%] md:h-[100%] md:w-[100%] shrink-0"
+            className=" w-[100%] h-[100%] md:h-[100%] md:object-fit md:w-[100%]"
           />
         </figure>
+        </div>
         <div id="contact" className="flex items-center justify-between px-5">
           <div className="flex flex-col mb-5">
-            <p className="text-white tracking-widest text-xl mb-2 md:text-white pl-6 md:text-lg py-10">
+            <p className="text-white tracking-widest py-5 mb-7 text-md md:mb-2 md:text-white pl-6 md:text-lg md:py-10">
               Contact Us:
             </p>
             <p className="text-white tracking-widest text-xl md:text-white pl-6 md:text-lg mt-[-40px]">
@@ -354,21 +357,21 @@ function Hero() {
         </div>
       </div>
 
-      <div className="h-[60px]  bg-black md:bg-black flex items-end w-full justify-center hover:bg-black  transition duration-700 text-orange-400 md:first-letter  md:h-[80px] leading-3">
-        <div className="pt-3 text-center">
-          <footer className="flex pb-2 justify-center items-center gap-3 md:text-lg  cursor-pointer md:pb-2">
+      <div className="h-[60px] flex w-full hover:bg-black transition  leading-2 duration-700 justify-center bg-black md:bg-black md:flex items-center md:w-full md:justify-center md:hover:bg-black  md:transition md:duration-700 text-orange-400   md:h-[80px] md:leading-3">
+        <div className="pt-3 text-center  md:text-center">
+          <footer className="flex  justify-center items-center gap-3 md:text-lg  cursor-pointer md:pb-2">
             <BsFacebook className=" hover:text-white md:transition md:duration-700 text-xg" />
             <AiFillGoogleCircle className="hover:text-white md:transition md:duration-700 text-lg" />
             <AiFillInstagram className="hover:text-white md:transition md:duration-700 text-lg" />
             <AiFillTwitterCircle className="hover:text-white md:transition md:duration-700 text-lg" />
           </footer>
-          <p className=" md:tracking-wider pb-2 ">
+          <p className=" md:tracking-wider md:pb-2 ">
             We are music{" "}
             <span className="text-white hover:text-orange  transition duration-700">
               Music is us
             </span>
           </p>
-          <p className=" footer-text md: tracking-wider pb-3">
+          <p className=" footer-text md: tracking-wider pb-1">
             Copyright @2021 FLIXIA
           </p>
         </div>

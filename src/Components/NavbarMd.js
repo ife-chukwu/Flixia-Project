@@ -27,7 +27,7 @@ const NavbarMd = () => {
 
         {openNav && (
           <ul
-            className=" px-20 ml-[-13px]  z-50 bg-black/50  mt-[-70%] cursor-pointer absolute md:hidden"
+            className=" px-20 ml-[-20px]  z-50 bg-black/50  mt-[-70%] cursor-pointer absolute md:hidden"
 
             data-aos="fade-down"
             data-aos-duration="md:10000"
