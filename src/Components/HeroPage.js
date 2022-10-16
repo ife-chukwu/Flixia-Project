@@ -58,33 +58,24 @@ function Hero() {
           </figure>
 
           <ul className=" hidden  md:flex md:flex-row md:text-white md:gap-5 md:px-9 md:pt-4 md:items-center md:font-normal md:text-lg  md:cursor-pointer">
-            <li
-              className="md:text-white md:hover:text-orange-400"
-              onClick={buttonHandler}
-            >
-              Albums
-            </li>
-            <li
-              className="md:text-white md:hover:text-orange-400"
-              onClick={buttonHandler}
-            >
-              Artists
+            <li className="md:text-white md:hover:text-orange-400">
+              <a
+                href="#artist-sec"
+                className="md:text-white md:hover:text-orange-400 scroll-smooth"
+              >
+                Artists
+              </a>
             </li>
             <li>
               <a
                 href="#categories"
                 className="md:text-white md:hover:text-orange-400 scroll-smooth"
               >
-                Category
+                Albums
               </a>
             </li>
 
-            <li
-              className="md:text-white md:hover:text-orange-400"
-              onClick={buttonHandler}
-            >
-              Videos
-            </li>
+            <li className="md:text-white md:hover:text-orange-400">Videos</li>
             <li>
               <a
                 href="#contact"
@@ -127,7 +118,7 @@ function Hero() {
               {openForm && (
                 <form
                   onSubmit={buttonHandler}
-                  className="px-20 bg-black/90 absolute rounded-2xl w-[350px] h-[300px] z-30 md:absolute   md:flex md:flex-col md:bg-black/70 md:h-[65vh]    md:rounded-2xl md:mt-[10px] md:w-[520px] md:z-30"
+                  className="px-20 bg-black/70 absolute rounded-2xl w-[350px] h-[300px] z-30 md:absolute   md:flex md:flex-col md:bg-black/70 md:h-[65vh]    md:rounded-2xl md:mt-[10px] md:w-[520px] md:z-30"
                   data-aos="fade-down"
                   data-aos-easing="linear"
                   data-aos-duration="500"
@@ -164,8 +155,8 @@ function Hero() {
                   />
 
                   <button
-                    className=" flex ml-[57px] mt-8 px-[40px] py-2 rounded-xl
-               md:flex bg-orange-400  hover:bg-orange-500 hover:text-white  transition duration-400 text-white md:pl-[60px] md:py-3   md:rounded-xl text-center text-xl md:ml-[105px] md:w-60 md:mt-20 shadow-lg shadow-black"
+                    className=" flex ml-[50px] mt-8 px-[40px] py-2 rounded-xl
+               md:flex bg-orange-400  hover:bg-orange-500 hover:text-white  transition duration-400 text-white md:pl-[60px] md:py-3   md:rounded-xl text-center text-xl md:ml-[105px] md:w-60 md:mt-10 shadow-lg shadow-black"
                   >
                     Submit
                   </button>
@@ -185,10 +176,14 @@ function Hero() {
           id="categories"
         >
           <h1 className="flex justify-center items-center py-4 text-4xl uppercase md:flex md:justify-center md:items-center md:py-4 md:text-white md:text-5xl md:uppercase">
-            Album <span className="text-orange-400 ml-3 md:text-orange-400 md:ml-3"> Covers</span>
+            Album{" "}
+            <span className="text-orange-400 ml-3 md:text-orange-400 md:ml-3">
+              {" "}
+              Covers
+            </span>
           </h1>
 
-          <div className=" flex gap-5 overflow-x-scroll scroll-smooth h-[300px] md:flex md:gap-10 md:overflow-x-scroll md:first-letter md:h-[400px] md:scroll-smooth ">
+          <div className=" flex gap-5 overflow-x-scroll scroll-smooth h-[300px] scrollbar-hide md:flex md:gap-10 md:overflow-x-scroll md:first-letter md:h-[400px] md:scroll-smooth">
             <div className="w-[400px] gap-5 h-[230px] rounded border border-gray-400 bg-black/5 md:w-[400px] md:bg-black/5 md:h-[300px] md:shrink-0 md:rounded-lg md:border md:border-slate-400">
               <figure className="w-[300px] p-2 h-[200px] shrink-0 md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
@@ -197,7 +192,9 @@ function Hero() {
                   alt=""
                 />
                 <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="ml-3 text-orange-400 md:text-orange-400  md:ml-3">Show</span>{" "}
+                  <span className="ml-3 text-orange-400 md:text-orange-400  md:ml-3">
+                    Show
+                  </span>{" "}
                   Brakers
                 </figcaption>
               </figure>
@@ -212,9 +209,11 @@ function Hero() {
                   alt=""
                   className="h-[100%] gap-5 rounded-2xl w-[100%] md:w-[100%] md:h-[100%] md:rounded-2xl  "
                 />
-                
+
                 <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Disco</span>{" "}
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
+                    Disco
+                  </span>{" "}
                   Plate
                 </figcaption>
               </figure>
@@ -227,7 +226,9 @@ function Hero() {
                   alt=""
                 />
                 <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Water</span>{" "}
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
+                    Water
+                  </span>{" "}
                   Miles
                 </figcaption>
               </figure>
@@ -240,8 +241,10 @@ function Hero() {
                   alt=""
                 />
                 <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Chains</span> &
-                  Chackles
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
+                    Chains
+                  </span>{" "}
+                  & Chackles
                 </figcaption>
               </figure>
             </div>
@@ -253,7 +256,9 @@ function Hero() {
                   alt=""
                 />
                 <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Electronic</span>{" "}
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
+                    Electronic
+                  </span>{" "}
                   sound
                 </figcaption>
               </figure>
@@ -266,7 +271,10 @@ function Hero() {
                   alt=""
                 />
                 <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Acou</span> Stic
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
+                    Acou
+                  </span>{" "}
+                  Stic
                 </figcaption>
               </figure>
             </div>
@@ -293,7 +301,9 @@ function Hero() {
                   alt=""
                 />
                 <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">Behind</span>
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
+                    Behind
+                  </span>
                   Scenes
                 </figcaption>
               </figure>
@@ -321,22 +331,173 @@ function Hero() {
                   alt=""
                 />
                 <figcaption className="flex text-white py-2 text-xl items-center justify-center md:flex md:justify-center md:items-center md:text-white md:py-2 md:text-3xl text-font uppercase">
-                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">All d</span> Way
+                  <span className="ml-3 text-orange-400 md:text-orange-400 md:ml-3">
+                    All d
+                  </span>{" "}
+                  Way
                 </figcaption>
               </figure>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-slate-900">
+      <div
+        id="artist-sec"
+        className=" pt-10 h-[100%] w-[100%] bg-black/90 scroll-smooth md:pt-10"
+      >
+        <div className="flex justify-center items-center ">
+          <h1 className="text-white uppercase text-4xl md:text-white md:text-[3rem]">
+            Art<span className="text-orange-400">ists</span>
+          </h1>
+        </div>
+        <div className="flex mx-10 py-20  overflow-x-scroll scrollbar-hide scroll-smooth whitespace-nowrap md:mx-10">
+          <div className="flex gap-5 md:flex md:gap-10 md:items-center ">
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/AKeys.webp"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Alicia <span className="text-orange-400 flex "> Keys</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/Image 4.jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                2<span className="text-orange-400 flex "> Face</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (2).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Rock <span className="text-orange-400 flex "> On</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (3).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Jay<span className="text-orange-400 flex "> Z</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (5).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Re <span className="text-orange-400 flex "> ma</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (6).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Lo <span className="text-orange-400 flex "> jay</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (7).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Dav <span className="text-orange-400 flex "> ido</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (8).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Sho <span className="text-orange-400 flex "> la</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (10).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Chris <span className="text-orange-400 flex "> Brown</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (11).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Nipsey <span className="text-orange-400 flex "> Hustle</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (12).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                The <span className="text-orange-400 flex "> Weekends</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (13).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Te <span className="text-orange-400 flex "> ms</span>
+              </figcaption>
+            </figure>
+            <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
+              <img
+                src="./Images/images (14).jpg"
+                alt=""
+                className="w-[100%] h-[100%] rounded-full shrink-0"
+              />
+              <figcaption className="flex  justify-center   text-white  md:flex md:text-white md:justify-center md:text-xl">
+                Ak <span className="text-orange-400 flex "> on</span>
+              </figcaption>
+            </figure>
+            <p className=" p-5 cursor-pointer flex items-center underline text-white hover:text-orange-400 md:underline md:text-white md:hover:text-orange-400 md:transition md:duration-300 md:p-5 md:flex  md:items-center md:cursor-pointer">
+              See more{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <div className="bg-black/90">
         <div className="opacity-70">
-        <figure className="w-full  h-[250px] object-fit md:object-fit md:h-[250px] md:w-full border border-slate-600 md:backdrop-blur-7xl">
-          <img
-            src="https://media.istockphoto.com/photos/happy-woman-wearing-headphones-outdoor-picture-id1401333246?b=1&k=20&m=1401333246&s=170667a&w=0&h=FXCiQlhHqZgawF18gClhHlrdeAQM0LT65yBipPXfA_4="
-            alt="Flixia"
-            className=" w-[100%] h-[100%] md:h-[100%] md:object-fit md:w-[100%]"
-          />
-        </figure>
+          <figure className="w-full  h-[250px] object-fit md:object-fit md:h-[250px] md:w-full border border-slate-600 md:backdrop-blur-7xl">
+            <img
+              src="https://media.istockphoto.com/photos/happy-woman-wearing-headphones-outdoor-picture-id1401333246?b=1&k=20&m=1401333246&s=170667a&w=0&h=FXCiQlhHqZgawF18gClhHlrdeAQM0LT65yBipPXfA_4="
+              alt="Flixia"
+              className=" w-[100%] h-[100%] md:h-[100%] md:object-fit md:w-[100%]"
+            />
+          </figure>
         </div>
         <div id="contact" className="flex items-center justify-between px-5">
           <div className="flex flex-col mb-5">

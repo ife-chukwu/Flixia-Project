@@ -27,16 +27,38 @@ const NavbarMd = () => {
 
         {openNav && (
           <ul
-            className=" px-20 ml-[-20px]  z-50 bg-black/50  mt-[-70%] cursor-pointer absolute md:hidden"
-
+            className=" px-20 ml-[-34px]  z-50 bg-black/50  mt-[-70%] cursor-pointer absolute md:hidden"
             data-aos="fade-down"
             data-aos-duration="md:10000"
           >
-            <li className="text-white text-lg  hover:text-orange-400 py-10 md:hidden">Albums</li>
-            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">Artists</li>
-            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">Category</li>
-            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">Videos</li>
-            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">Contact</li>
+            <li className="text-white text-lg  hover:text-orange-400 py-10 md:hidden">
+              <a
+                href="#categories"
+                className="md:text-white md:hover:text-orange-400 scroll-smooth"
+              >
+                Albums
+              </a>
+            </li>
+            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">
+              <a
+                href="#artist-sec"
+                className="md:text-white md:hover:text-orange-400 scroll-smooth"
+              >
+                Artists
+              </a>
+            </li>
+
+            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">
+              Videos
+            </li>
+            <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">
+              <a
+                href="#contact"
+                className="md:text-white md:hover:text-orange-400 "
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         )}
       </div>
