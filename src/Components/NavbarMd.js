@@ -27,7 +27,7 @@ const NavbarMd = () => {
 
         {openNav && (
           <ul
-            className=" px-20 ml-[-34px]  z-50 bg-black/50  mt-[-70%] cursor-pointer absolute md:hidden"
+            className=" px-20 ml-[-25px]  z-50 bg-black/50  mt-[-70%] cursor-pointer absolute md:hidden"
             data-aos="fade-down"
             data-aos-duration="md:10000"
           >
@@ -49,7 +49,12 @@ const NavbarMd = () => {
             </li>
 
             <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">
-              Videos
+            <a
+                href="#videos"
+                className="md:text-white md:hover:text-orange-400 "
+              >
+                Videos
+              </a>
             </li>
             <li className="text-white text-lg hover:text-orange-400 py-10 md:hidden">
               <a

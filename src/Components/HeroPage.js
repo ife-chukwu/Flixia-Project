@@ -75,7 +75,13 @@ function Hero() {
               </a>
             </li>
 
-            <li className="md:text-white md:hover:text-orange-400">Videos</li>
+            <li className="md:text-white md:hover:text-orange-400"><a
+                href="#videos"
+                className="md:text-white md:hover:text-orange-400 "
+              >
+                Videos
+              </a></li>
+
             <li>
               <a
                 href="#contact"
@@ -183,7 +189,7 @@ function Hero() {
             </span>
           </h1>
 
-          <div className=" flex gap-5 overflow-x-scroll scroll-smooth h-[300px] scrollbar-hide md:flex md:gap-10 md:overflow-x-scroll md:first-letter md:h-[400px] md:scroll-smooth">
+          <div className=" flex gap-5 overflow-x-scroll scroll-smooth h-[300px] md:flex md:gap-10 md:overflow-x-scroll md:first-letter md:h-[400px] md:scroll-smooth">
             <div className="w-[400px] gap-5 h-[230px] rounded border border-gray-400 bg-black/5 md:w-[400px] md:bg-black/5 md:h-[300px] md:shrink-0 md:rounded-lg md:border md:border-slate-400">
               <figure className="w-[300px] p-2 h-[200px] shrink-0 md:w-[400px] md:h-[250px] md:shrink-0 md:p-2 ">
                 <img
@@ -350,7 +356,7 @@ function Hero() {
             Art<span className="text-orange-400">ists</span>
           </h1>
         </div>
-        <div className="flex mx-10 py-20  overflow-x-scroll scrollbar-hide scroll-smooth whitespace-nowrap md:mx-10">
+        <div className="flex mx-10 py-20  overflow-x-scroll  scroll-smooth whitespace-nowrap md:mx-10">
           <div className="flex gap-5 md:flex md:gap-10 md:items-center ">
             <figure className=" flex flex-col w-[140px] h-[120px] shrink-0 scroll-smooth md:flex md:w-[200px] md:h-[180px]">
               <img
@@ -488,7 +494,132 @@ function Hero() {
           </div>
         </div>
       </div>
-     
+
+      <div className="bg-black/90 py-20 px-10" id="videos">
+        <div className="flex justify-center items-center py-10">
+          {" "}
+          <h1 className="text-white uppercase text-4xl md:text-[3rem] md:uppercase md:text-white">
+            {" "}
+            Music <span className="text-orange-400"> Videos </span>
+          </h1>
+        </div>
+
+        <div  className=" flex overflow-x-scroll whitespace-nowrap w-[100%] shrink-0 scroll-smooth">
+          <div className="m-10 w-[240px] h-[150px] flex gap-10 md:m-10 md:w-[300px] md:h-[200px] md:flex md:gap-10">
+            <iframe
+              width="895"
+              height="480"
+              src="https://www.youtube.com/embed/h9CSvdiOY3M"
+              title="Polo G - Black Hearted (Official Video)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="452"
+              height="240"
+              src="https://www.youtube.com/embed/0jz0GAFNNIo"
+              title="Drake - When To Say When & Chicago Freestyle"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="899"
+              height="480"
+              src="https://www.youtube.com/embed/8y454cMCUsQ"
+              title="Maury - Memories (Official Video)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="899"
+              height="480"
+              src="https://www.youtube.com/embed/Bd3vBzUtk84"
+              title="Lil Baby, Lil Durk ft. Rod Wave Rich Off Pain (Music Video)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="469"
+              height="480"
+              src="https://www.youtube.com/embed/BQRbTqgY-rI"
+              title="H.E.R. ft. Lil Baby & Lil Durk Find A Way (Music Video)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="469"
+              height="480"
+              src="https://www.youtube.com/embed/rP09GUQFDFk"
+              title="Future - WAIT FOR U (Official Music Video) ft. Drake, Tems"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="469"
+              height="480"
+              src="https://www.youtube.com/embed/cJLo4L_kZSc"
+              title="Drake In The Bible ft. Lil Durk, Giveon (Music Video)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="469"
+              height="480"
+              src="https://www.youtube.com/embed/E-T1NnxuVCI"
+              title="Nardo Wick - G Nikes (Feat. Polo G) [Official Video]"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="899"
+              height="480"
+              src="https://www.youtube.com/embed/iOGJ76ct8G8?list=PLBAK9YCzW4TboGRrVT2Rv8lWxPZ1zePqf"
+              title="Omah Lay - i'm a mess (Official Music Video)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="899"
+              height="480"
+              src="https://www.youtube.com/embed/gCLUIzOsgGg"
+              title="Fireboy DML & Asake - Bandana (Official Video)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+            <iframe
+              width="899"
+              height="480"
+              src="https://www.youtube.com/embed/7M2Gps9xR8g"
+              title="Ruger - Girlfriend (Official Video)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="w-[100%] h-[100%] border border-orange-500"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
       <div className="bg-black/90">
         <div className="opacity-70">
           <figure className="w-full  h-[250px] object-fit md:object-fit md:h-[250px] md:w-full border border-slate-600 md:backdrop-blur-7xl">
